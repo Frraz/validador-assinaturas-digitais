@@ -264,7 +264,7 @@ Contribuições são bem-vindas! Para contribuir:
 Este projeto está licenciado sob a Licença MIT - veja o arquivo `LICENSE` para detalhes.
 
 ## 👨‍💻 Autor
-**Francisco R. A. Z.**
+**Warley Ferraz**
 
 -   GitHub: [Frraz](https://github.com/Frraz)
 
