@@ -3,10 +3,17 @@ uvicorn==0.21.1
 python-multipart==0.0.6
 Jinja2==3.1.2
 pypdf2==3.0.1
-PyPDF4==1.27.0
 reportlab==4.0.4
 aiofiles==23.1.0
 pycryptodome==3.18.0
 cffi==1.15.1
 asn1crypto==1.5.1
 python-jose[cryptography]==3.3.0
+cryptography>=41.0.0
+pyhanko>=0.20.0
+pyhanko-certvalidator>=0.23.0
+requests>=2.31.0
+# Bibliotecas para banco de dados
+sqlalchemy>=2.0.0
+alembic>=1.12.0
+psycopg2-binary>=2.9.9  # Para PostgreSQL
