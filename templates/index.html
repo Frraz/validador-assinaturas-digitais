@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Assinaturas Digitais em Massa</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Validador de Assinaturas Digitais em Massa</h1>
+            <p class="subtitle">Valide múltiplos documentos com assinaturas digitais de uma só vez</p>
+        </header>
+
+        <main>
+            <section class="upload-section">
+                <div class="drop-area" id="dropArea">
+                    <div class="drop-message">
+                        <img src="https://img.icons8.com/ios/50/000000/upload-document.png" alt="Upload Icon">
+                        <p>Arraste e solte documentos PDF aqui<br>ou</p>
+                        <button id="selectFilesBtn" class="btn primary">Selecionar Arquivos</button>
+                    </div>
+                    <input type="file" id="fileInput" multiple accept=".pdf" style="display: none;">
+                </div>
+                
+                <div class="selected-files" id="fileList" style="display: none;">
+                    <h3>Arquivos Selecionados</h3>
+                    <ul id="selectedFilesList"></ul>
+                    <div class="upload-actions">
+                        <button id="uploadBtn" class="btn primary">Iniciar Validação</button>
+                        <button id="clearBtn" class="btn secondary">Limpar</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="validation-status" id="validationStatus" style="display: none;">
+                <h3>Status da Validação</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar">
+                        <div class="progress" id="progressValue"></div>
+                    </div>
+                    <div class="progress-text" id="progressText">0%</div>
+                </div>
+                
+                <div class="file-status" id="fileStatusList">
+                    <!-- Será preenchido dinamicamente com JavaScript -->
+                </div>
+                
+                <div class="report-actions" id="reportActions" style="display: none;">
+                    <button id="downloadReportBtn" class="btn success">Baixar Relatório</button>
+                    <button id="newValidationBtn" class="btn primary">Nova Validação</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Validador de Assinaturas Digitais em Massa</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', path='/js/main.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+fastapi==0.95.0
+uvicorn==0.21.1
+python-multipart==0.0.6
+Jinja2==3.1.2
+pypdf2==3.0.1
+PyPDF4==1.27.0
+reportlab==4.0.4
+aiofiles==23.1.0
+pycryptodome==3.18.0
+cffi==1.15.1
+asn1crypto==1.5.1
+python-jose[cryptography]==3.3.0
